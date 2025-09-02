@@ -77,7 +77,6 @@ Edita `public/manifest.json` para cambiar:
 
 MIT License - Libre para uso personal y comercial
 
-## 📞 Contacto
 
 - **GitHub:** [@leo-dieguez91](https://github.com/leo-dieguez91)
 - **Proyecto:** [Standing Desk Reminder](https://github.com/leo-dieguez91/Standing-Desk-Reminder)
