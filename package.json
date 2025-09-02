@@ -1,0 +1,23 @@
+{
+  "name": "my-extension",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vite build && npm run fix-paths",
+    "fix-paths": "mkdir -p dist/popup && mv dist/src/popup/index.html dist/popup/ && sed -i '' 's|src=\"/assets/|src=\"../assets/|g' dist/popup/index.html && sed -i '' 's|href=\"/assets/|href=\"../assets/|g' dist/popup/index.html && cp public/icon-*.png dist/ && cp public/manifest.json dist/",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.283",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.1"
+  }
+}
